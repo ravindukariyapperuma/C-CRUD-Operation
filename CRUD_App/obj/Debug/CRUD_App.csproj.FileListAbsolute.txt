@@ -1,0 +1,10 @@
+D:\C#\CRUD_App\CRUD_App\bin\Debug\CRUD_App.exe.config
+D:\C#\CRUD_App\CRUD_App\bin\Debug\CRUD_App.exe
+D:\C#\CRUD_App\CRUD_App\bin\Debug\CRUD_App.pdb
+D:\C#\CRUD_App\CRUD_App\obj\Debug\CRUD_App.csprojAssemblyReference.cache
+D:\C#\CRUD_App\CRUD_App\obj\Debug\CRUD_App.Form1.resources
+D:\C#\CRUD_App\CRUD_App\obj\Debug\CRUD_App.Properties.Resources.resources
+D:\C#\CRUD_App\CRUD_App\obj\Debug\CRUD_App.csproj.GenerateResource.cache
+D:\C#\CRUD_App\CRUD_App\obj\Debug\CRUD_App.csproj.CoreCompileInputs.cache
+D:\C#\CRUD_App\CRUD_App\obj\Debug\CRUD_App.exe
+D:\C#\CRUD_App\CRUD_App\obj\Debug\CRUD_App.pdb
