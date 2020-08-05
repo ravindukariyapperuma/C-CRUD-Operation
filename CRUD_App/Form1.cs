@@ -44,6 +44,7 @@ namespace CRUD_App
         private void Form1_Load(object sender, EventArgs e)
         {
             Clear();
+            populateDataGridView();
         }
 
         private void btnSave_Click(object sender, EventArgs e)
@@ -58,7 +59,22 @@ namespace CRUD_App
                 db.SaveChanges();
             }
             Clear();
+            populateDataGridView();
             MessageBox.Show("Submitted Successfully");
+        }
+
+        void populateDataGridView()
+        {
+            dataCustomer.AutoGenerateColumns = false;
+            using (CrudDBEntities db = new CrudDBEntities())
+            {
+                dataCustomer.DataSource = db.Customers.ToList<Customer>();
+            }
+        }
+
+        private void dataCustomer_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }
