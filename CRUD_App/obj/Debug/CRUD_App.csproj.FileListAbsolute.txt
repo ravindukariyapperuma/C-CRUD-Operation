@@ -8,3 +8,8 @@ D:\C#\CRUD_App\CRUD_App\obj\Debug\CRUD_App.csproj.GenerateResource.cache
 D:\C#\CRUD_App\CRUD_App\obj\Debug\CRUD_App.csproj.CoreCompileInputs.cache
 D:\C#\CRUD_App\CRUD_App\obj\Debug\CRUD_App.exe
 D:\C#\CRUD_App\CRUD_App\obj\Debug\CRUD_App.pdb
+D:\C#\CRUD_App\CRUD_App\bin\Debug\EntityFramework.dll
+D:\C#\CRUD_App\CRUD_App\bin\Debug\EntityFramework.SqlServer.dll
+D:\C#\CRUD_App\CRUD_App\bin\Debug\EntityFramework.xml
+D:\C#\CRUD_App\CRUD_App\bin\Debug\EntityFramework.SqlServer.xml
+D:\C#\CRUD_App\CRUD_App\obj\Debug\CRUD_App.csproj.CopyComplete
