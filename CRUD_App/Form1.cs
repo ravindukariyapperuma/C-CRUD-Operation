@@ -98,5 +98,23 @@ namespace CRUD_App
                 btnDelete.Enabled = true;
             }
         }
+
+        private void btnDelete_Click(object sender, EventArgs e)
+        {
+            if(MessageBox.Show("Are you Sure to Delete this Record ?","CRUD Operation", MessageBoxButtons.YesNo) == DialogResult.Yes)
+            {
+                using (CrudDBEntities db = new CrudDBEntities())
+                {
+                    var entry = db.Entry(model);
+                    if (entry.State == EntityState.Detached)
+                        db.Customers.Attach(model);
+                    db.Customers.Remove(model);
+                    db.SaveChanges();
+                    populateDataGridView();
+                    Clear();
+                    MessageBox.Show("Deleted Successfully");
+                }
+            }
+        }
     }
 }
