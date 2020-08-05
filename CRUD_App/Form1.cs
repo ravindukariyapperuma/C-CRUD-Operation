@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.Entity;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -55,7 +56,10 @@ namespace CRUD_App
             model.Address = txtAddress.Text.Trim();
             using (CrudDBEntities db = new CrudDBEntities())
             {
-                db.Customers.Add(model);
+                if (model.CustomerID == 0)//Insert
+                    db.Customers.Add(model);
+                else //Update
+                    db.Entry(model).State = EntityState.Modified;
                 db.SaveChanges();
             }
             Clear();
