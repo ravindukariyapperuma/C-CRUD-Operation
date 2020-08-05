@@ -76,5 +76,23 @@ namespace CRUD_App
         {
 
         }
+
+        private void dataCustomer_MouseDoubleClick(object sender, MouseEventArgs e)
+        {
+            if (dataCustomer.CurrentRow.Index != -1)
+            {
+                model.CustomerID = Convert.ToInt32(dataCustomer.CurrentRow.Cells["CustomerID"].Value);
+                using (CrudDBEntities db = new CrudDBEntities())
+                {
+                    model = db.Customers.Where(x => x.CustomerID == model.CustomerID).FirstOrDefault();
+                    txtFirstname.Text = model.FirstName;
+                    txtLastname.Text = model.Lastname;
+                    txtCity.Text = model.City;
+                    txtAddress.Text = model.Address;
+                }
+                btnSave.Text = "Update";
+                btnDelete.Enabled = true;
+            }
+        }
     }
 }
